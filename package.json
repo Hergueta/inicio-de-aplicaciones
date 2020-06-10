@@ -12,6 +12,12 @@
     "author": "Gustavo Hergueta",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "babel-loader": "^8.1.0",
+        "babel-minify": "^0.5.1",
+        "babel-minify-webpack-plugin": "^0.3.1",
+        "babel-preset-minify": "^0.5.1",
         "copy-webpack-plugin": "^6.0.2",
         "css-loader": "^3.5.3",
         "file-loader": "^6.0.0",

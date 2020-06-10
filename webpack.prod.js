@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 
 const path = require('path');
@@ -25,6 +26,11 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
             },
             {
                 test: /styles\.css$/,
@@ -68,7 +74,8 @@ module.exports = {
             patterns: [
                 { from: 'src/assets', to: 'assets/' }
             ]
-        })
+        }),
+        new MinifyPlugin()
     ]
 
 };
