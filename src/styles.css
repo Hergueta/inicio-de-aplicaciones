@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.navbar {
+    width: 98%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .titulo {
     font-family: 'Montserrat', sans-serif;
 }
