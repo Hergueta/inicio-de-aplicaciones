@@ -6,7 +6,7 @@
 * Realizar la utilizacion de los mismos solo haciendo la descarga
 
 ---
-## Sitiios para documentacion original:
+## Sitios para documentacion original:
 [webpack](https://webpack.js.org/ "Pagina oficial") y [babel](https://babeljs.io/ "Pagina oficial")
 
 ---
@@ -16,6 +16,8 @@
 ```
 npm install
 ```
+
+
 
 
 
